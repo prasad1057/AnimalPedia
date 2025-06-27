@@ -2,11 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone') {
-             steps {
-                  git url: 'https://github.com/prasad1057/AnimalPedia.git'
+            stage('Clone') {
+                  steps {
+                         git branch: 'main', url: 'https://github.com/prasad1057/AnimalPedia.git'
+                        }
                 }
-            }
+
 
 
         stage('Install Requirements') {
