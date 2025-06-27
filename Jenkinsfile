@@ -3,10 +3,10 @@ pipeline {
 
     stages {
         stage('Clone') {
-            steps {
-                git 'https://github.com/prasad1057/AnimalPedia.git'
+             steps {
+                  git url: 'https://github.com/prasad1057/AnimalPedia.git'
+                }
             }
-        }
 
 
         stage('Install Requirements') {
